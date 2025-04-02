@@ -4,7 +4,7 @@
 The **Smart Attendance System** is a digital solution designed to streamline the process of tracking student attendance. This system allows teachers to mark attendance digitally, reducing manual errors and improving efficiency. 
 
 ## Team Information
-- **Team Name:** SoloTech  
+- **Team Name:** Sahads Team  
 - **Team Member:** Sahad Chowdhury  
 
 ## Features
