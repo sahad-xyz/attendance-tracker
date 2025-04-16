@@ -1,0 +1,79 @@
+.root {
+    -fx-background-color: #121212;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-text-fill: #F5F5F5;
+}
+
+.label {
+    -fx-text-fill: #F5F5F5;
+}
+
+.button {
+    -fx-background-color: #1F1F1F;
+    -fx-text-fill: white;
+    -fx-padding: 8 16;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #E50914;
+}
+
+.text-field {
+    -fx-background-color: #2A2A2A;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #888;
+    -fx-background-radius: 8;
+    -fx-border-color: #3A3A3A;
+    -fx-border-radius: 8;
+}
+
+.text-field:focused {
+    -fx-border-color: #E50914;
+}
+
+.table-view {
+    -fx-background-color: #1C1C1C;
+    -fx-border-color: transparent;
+    -fx-table-cell-border-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-row-cell {
+    -fx-background-color: #1C1C1C;
+    -fx-text-fill: white;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #2E2E2E; /* lighter gray hover */
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #2A2A2A;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 32px;
+    -fx-border-color: transparent;
+    -fx-background-color: #2A2A2A;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: white;
+}
+
+.alert {
+    -fx-background-color: #1E1E1E;
+    -fx-text-fill: #F5F5F5;
+}
+
+.alert .header-panel .label {
+    -fx-text-fill: #F5F5F5;
+}
+
+/* Optional shared layout styling */
+.vbox, .hbox {
+    -fx-spacing: 10;
+    -fx-padding: 10;
+}

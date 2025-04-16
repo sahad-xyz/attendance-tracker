@@ -1,0 +1,62 @@
+📘 User Manual – Smart Attendance System
+
+1. Purpose
+The Smart Attendance System allows teachers to log in, manage students and courses, mark attendance, and generate attendance reports using a clean JavaFX GUI and MySQL database backend.
+
+2. Running the Application
+- Launch the app by running the Launcher.java file, or using the packaged .jar or .exe version if available
+- The launcher opens with a “Login” button
+- Log in using your registered teacher credentials (these must be inserted into the database manually before use)
+
+3. Main Features
+- Dashboard: Central hub to navigate all screens
+- Manage Students: Add, edit, or delete students and assign them to a course ID
+- Manage Courses: Add or delete courses with instructor names
+- Mark Attendance: Load students by course ID and record their status (Present/Absent)
+- Attendance Report: View recorded attendance for a given course ID
+
+4. Navigation & Controls
+Each screen is visually styled for consistency. You will receive confirmation messages after actions like submitting attendance or deleting a student. Error messages will show if you try to submit an incomplete form.
+
+5. Design Style
+The app uses a modern “Tesla-style” dark mode with rounded buttons, hover effects, and smooth alignment for a clean user experience.
+
+
+🔧 Implementation Manual – Developer Guide
+
+1. File Structure
+- Launcher.java: Entry point that opens the login screen
+- LoginApp.java: Authenticates the teacher user
+- Dashboard.java: Navigates to all feature screens
+- ManageStudents.java: Full CRUD for students with course ID validation
+- CourseManager.java: Create/delete courses
+- MarkAttendance.java: Load students for a course and submit attendance
+- AttendanceReport.java: Shows a list of attendance records per course
+- DatabaseConnection.java: Central database helper class
+- Person.java: Abstract base class
+- Student.java: Inherits from Person class
+
+2. MySQL Database Tables
+- teachers (teacher_id, username, password)
+- courses (course_id, course_name, instructor)
+- students (student_id, name, course_id)
+- attendance_records (record_id, student_id, course_id, date, status)
+
+3. Technologies Used
+- Java 17 or newer
+- JavaFX SDK 17+
+- MySQL
+- Maven
+- CSS for GUI styling
+
+4. OOP Principles Applied
+- Encapsulation: All class fields are private with public getters
+- Inheritance: Student extends Person
+- Polymorphism: getRole() method overridden in Student
+
+5. Notes
+- The resources folder must be marked correctly in IntelliJ
+- Teacher credentials must be added manually into the MySQL “teachers” table before login
+- This app can be packaged as a runnable .jar or .exe using jpackage or Launch4j
+
+This manual supports the final submission and helps both users and reviewers understand how to run and maintain the system.
